@@ -7,22 +7,22 @@
 
 ## Project Overview:
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. 
+For the **Restaurant Reviews** projects, I incrementally converted a static webpage into a mobile-ready web application. 
 
-In **Stage One**, I took a static design that lacked accessibility and converted the design to be responsive on different sized displays and accessible for screen reader use. I also added a service worker to begin the process of creating a seamless offline experience for my users.
+In **Stage One**, I took a static design that lacked accessibility and converted the design to be responsive on different-sized displays and accessible for screen reader use. I also added a service worker to begin the process of creating a seamless offline experience for my users.
 
 In **Stage Two**, I took the responsive, accessible design that I built in Stage One and connected it to an external server. I began by using asynchronous JavaScript to request JSON data from the server. I store data received from the server in an offline database using IndexedDB, which creates an app shell architecture. Finally, I optimized my site to meet performance benchmarks, which I tested using Lighthouse.
 
 
 ### Specification
 
-In **Stage One**, we were provided the code for a restaurant reviews website. The code had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn’t include any standard accessibility features, and it didn’t work offline at all. Our job was to update the code to resolve these issues while still maintaining the included functionality. 
+In **Stage One**, we were provided the code for a restaurant reviews website. The code had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn’t include any standard accessibility features, and it didn’t work offline at all. My job was to update the code to resolve these issues while still maintaining the included functionality. 
 
-In **Stage Two**, we are provided code for a Node development server and a README for getting the server up and running locally on our computer. That README contains the API we need to make JSON requests to the server. Once I had the server up, I began the work of improving my Stage One project code.
+In **Stage Two**, we were provided code for a Node development server and a README for getting the server up and running locally on our computer. That README contains the API we need to make JSON requests to the server. Once I had the server up, I began the work of improving my Stage One project code.
 
 The core functionality of the application did not change for this stage. Only the source of the data changed. I used the fetch() API to make requests to the server to populate the content of my Restaurant Reviews app.
 
-In **Stage Two**, we use server data instead of local memory. In the first version of the application, all of the data for the restaurants was stored in the local application. In **Stage Two**, we pull all of our data from the server instead, and use the response data to generate the restaurant information on the main page and the detail page.
+In **Stage Two**, I use server data instead of local memory. In the first version of the application, all of the data for the restaurants was stored in the local application. In **Stage Two**, I pull all of the data from the server instead, and use the response data to generate the restaurant information on the main page and the detail page.
 
 I used IndexedDB to cache JSON responses. In order to maintain offline use with the development server, I update the service worker to store the JSON received by our requests using the IndexedDB API. As with Stage One, any page that has been visited by the user is made available offline, with data pulled from the shell database.
 
@@ -40,7 +40,7 @@ I audited my site's performance with Lighthouse by using the Audit tab of Chrome
 
 1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `py -m http.server 8000` or `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
 2. With your server running, visit the site: `http://localhost:8000`
 
