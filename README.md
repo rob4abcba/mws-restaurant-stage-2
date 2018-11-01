@@ -18,7 +18,7 @@ In **Stage Two**, I took the responsive, accessible design that I built in Stage
 
 In **Stage One**, we were provided the code for a restaurant reviews website. The code had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn’t include any standard accessibility features, and it didn’t work offline at all. My job was to update the code to resolve these issues while still maintaining the included functionality. 
 
-In **Stage Two**, we were provided code for a Node development server and a README for getting the server up and running locally on our computer. That README contains the API we need to make JSON requests to the server. Once I had the server up, I began the work of improving my Stage One project code.
+In **Stage Two**, we were provided code for a Node development server and a README for getting the server up and running locally on our computer. That [README](https://github.com/rob4abcba/mws-restaurant-stage-2-server/blob/master/README.md) contains the API we need to make JSON requests to the server. Once I had the server up, I began the work of improving my Stage One project code.
 
 The core functionality of the application did not change for this stage. Only the source of the data changed. I used the fetch() API to make requests to the server to populate the content of my Restaurant Reviews app.
 
